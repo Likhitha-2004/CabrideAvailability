@@ -1,0 +1,317 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2, h3 {
+  font-size: 2rem;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+/* Header Styles for Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2980b9;
+  padding: 15px;
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 2rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #1f6295;
+  border-radius: 5px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+tr:hover td {
+  background-color: #f1f1f1;
+}
+
+/* Card Styling for Current Booking */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+/* Form Styling */
+.form-container {
+  background-color: white;
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select, form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1f6295;
+}
+
+/* Dynamic Fare Display */
+.fare-container {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+/* Profile Styles */
+.profile-container {
+  background-color: white;
+  padding: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h3 {
+  color: #2980b9;
+}
+
+.profile-container .booking-history-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container .booking-history-item p {
+  margin: 5px 0;
+}
+
+/* Booking Details */
+.details-container {
+  background-color: white;
+  padding: 30px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details-container td {
+  padding: 12px;
+  text-align: left;
+}
+
+.details-container td:nth-child(1) {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+/* Homepage Styling */
+.homepage {
+  background-color: #2980b9;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.homepage h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.homepage p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.homepage .cta-button {
+  background-color: #fff;
+  color: #2980b9;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.homepage .cta-button:hover {
+  background-color: #1f6295;
+  color: white;
+}
+.available-cabs {
+  padding: 20px;
+  text-align: center;
+}
+
+.available-cabs h2 {
+  margin-bottom: 20px;
+  color: #004aad;
+}
+
+.availability-count {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cabs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cab-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cab-card.available {
+  background-color: #f9fff9;
+}
+
+.cab-card.unavailable {
+  background-color: #fff5f5;
+  opacity: 0.6;
+}
+
+.cab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cab-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.cab-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cab-card p {
+  margin: 5px 0;
+}
+
+.availability-status {
+  font-weight: bold;
+  color: #006400;
+}
+
+.cab-card.unavailable .availability-status {
+  color: #b22222;
+}
+
+.book-now {
+  background-color: #004aad;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-now:hover {
+  background-color: #002d6b;
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: #2980b9;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
